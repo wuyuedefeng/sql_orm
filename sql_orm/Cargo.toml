@@ -1,0 +1,19 @@
+[package]
+name = "sql_orm"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[features]
+default = [
+  "log",
+]
+
+[dependencies]
+log = { version = "0.4", optional = true }
+tracing = { version = "0.1", optional = true }
+
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+sql_gen = {path = "../../sql_gen"}
+sql_orm_macro = {path = "../sql_orm_macro"}

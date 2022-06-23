@@ -1,0 +1,6 @@
+[workspace]
+members = [
+  "sql_orm_macro",
+  "sql_orm",
+  "examples/mysql",
+]
